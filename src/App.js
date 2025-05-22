@@ -23,7 +23,7 @@ const PostAdForm = () => {
   return (
     <div className="bg-white text-gray-900 font-sans">
       {/* Header */}
-      <header className="flex items-center border-b border-gray-400 px-4 h-12">
+      <header className="flex items-center border-b border-gray-600 px-4 h-12">
         <button aria-label="Go back" className="text-gray-700 hover:text-gray-900 focus:outline-none">
           <i className="fas fa-arrow-left"></i>
         </button>
@@ -47,7 +47,7 @@ const PostAdForm = () => {
 </section>
 
 <section className=' p-4 space-y-4'>
-          <h2 className="font-bold text-xl pb-1 mb-1">INCLUDE SOME DETAILS</h2>
+          <h2 className="font-bold text-xl pb-2 mb-2">INCLUDE SOME DETAILS</h2>
           {[{ label: 'Type *', values: ["Flats / Apartments", "Independent / Builder Floors", "Farm House", "House & Villa"] },
             { label: 'BHK', values: ["1", "2", "3", "4", "4+"] },
             { label: 'Bathrooms', values: ["1", "2", "3", "4", "4+"] }
@@ -56,7 +56,7 @@ const PostAdForm = () => {
               <label className="block text-sm  ">{label}</label>
               <div className="flex flex-wrap gap-2">
                 {values.map(val => (
-                  <button key={val} className="border border-gray-300 rounded px-4 py-1 text-sm hover:bg-blue-100">{val}</button>
+                  <button key={val} className="border border-gray-300 rounded px-5 py-1 text-sm hover:bg-blue-100">{val}</button>
                 ))}
               </div>
             </div>
@@ -73,27 +73,16 @@ const PostAdForm = () => {
               <label className="block text-sm">{label}</label>
               <div className="flex flex-wrap gap-2">
                 {values.map(val => (
-                  <button key={val} className="text-sm border border-gray-300 rounded px-3 py-1 hover:bg-blue-100">{val}</button>
+                  <button key={val} className="text-sm border border-gray-300 rounded px-5 py-1 hover:bg-blue-100">{val}</button>
                 ))}
               </div>
             </div>
           ))}
 
-          {/* {[{ label: 'Super Builtup area sqft *', id: 'super-builtup' },
-            { label: 'Carpet Area sqft *', id: 'carpet-area' },
-            { label: 'Maintenance (Monthly)', id: 'maintenance' },
-            { label: 'Total Floors', id: 'total-floors' },
-            { label: 'Floor No', id: 'floor-no' }
-          ].map(({ label, id }) => (
-            <div key={id}>
-              <label htmlFor={id} className="block text-sm mb-1">{label}</label>
-              <input id={id} type="text" className="hover:border-blue-500 w-1/2 border border-gray-400 rounded px-3 py-2 text-sm" />
-            </div>
-          ))} */}
           <FormInputs/>
 
           <div>
-            <label className="block text-sm mb-1">Car Parking</label>
+            <label className="block text-sm mb-2">Car Parking</label>
             <div className="flex gap-2">
               {["0", "1", "2", "3", "3+"].map(p => (
                 <button key={p} className="w-10 h-8 border border-gray-300 rounded text-center hover:bg-blue-100">{p}</button>
@@ -193,11 +182,11 @@ const PostAdForm = () => {
           <h2 className="font-bold text-lg text-gray-900">REVIEW YOUR DETAILS</h2>
           <div className="flex items-center space-x-6 mb-6">
             <div className="relative w-20 h-20 flex-shrink-0">
-              <img
-                src="https://storage.googleapis.com/a1aa/image/811ee311-7656-43cb-19d8-76c40537298e.jpg"
-                alt="Illustration"
+              {/* <img
+                src="https://www.google.com/url?sa=i&url=https%3A%2F%2Feasydrawingguides.com%2Fhow-to-draw-tanjiro-kamado-from-demon-slayer%2F&psig=AOvVaw2y6PjnoSZaQI2xtne77Gtu&ust=1747978035902000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCJDm0N-rto0DFQAAAAAdAAAAABAE"
+                alt="pic"
                 className="w-20 h-20 object-cover rounded"
-              />
+              /> */}
               <button
                 aria-label="Change profile picture"
                 className="absolute bottom-0 right-0 bg-white border border-gray-300 rounded-full p-1 text-gray-600 hover:text-gray-900"

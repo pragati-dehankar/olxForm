@@ -19,7 +19,7 @@ const PhotoUploadSection = () => {
   return (
     <section>
       <h2 className="font-bold text-xl text-black mb-3 select-none">UPLOAD UP TO 20 PHOTOS</h2>
-      <div className="grid grid-cols-5 gap-2 max-w-[520px]">
+      <div className="grid grid-cols-4 gap-2 max-w-[520px]">
         {/* Add Photo Button */}
         <button
           type="button"
